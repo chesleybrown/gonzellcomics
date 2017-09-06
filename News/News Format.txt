@@ -1,0 +1,35 @@
+<HTML>
+
+<HEAD>
+<TITLE>News</TITLE>
+<STYLE TYPE="text/css" >
+<!--
+BODY {background-color: #000000}
+-->
+</STYLE>
+</HEAD>
+
+
+
+<BODY>
+
+
+<TEXT><FONT Color="#f00000">
+
+Sat, May 18th, 2002(Date)
+<br>
+6:43pm(Time)
+<br>
+
+</FONT>
+<FONT Color="#ffffff">
+
+<IMG SRC="http://www.geocities.com/gonzell_comics/Face Folder/Face.png">
+
+Message goes here.
+
+</FONT>
+</TEXT>
+
+
+</BODY>

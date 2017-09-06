@@ -1,0 +1,54 @@
+     \Comic Name/                 \Date Started/                 \Date Finished/          \Date Published/         
+
+1.  Where you be?                  Unknown, 02                     Unknown, 02           Thu, May 16th, 02
+2.  I Pick Love!                   Unknown, 02                     Unknown, 02		 Fri, May 17th, 02
+3.  What did I Miss?               Unknown, 02                     Unknown, 02		 Sun, May 19th, 02
+4.  Wrong Cell                     Unknown, 02                     Unknown, 02		 Mon, May 27th, 02
+5.  A Quest for Steve              Unknown, 02                     Unknown, 02		 Tue, May 28th, 02
+6.  Taking Turns                   Unknown, 02                     Unknown, 02      	 Wed, May 29th, 02
+7.  What's the Chances?            Unknown, 02                     Unknown, 02 		 Thu, May 30th, 02
+8.  Damn NPC's                     Unknown, 02                     Unknown, 02		 Fri, May 31st, 02
+9.  Sleepy Steve                   Unknown, 02                     Unknown, 02		 Sat, Jun 1st, 02
+10. The Impostor                   Unknown, 02                  Mon, May 13th, 02	 Sun, Jun 2nd, 02
+11. Just a Portal to the Future  Mon, May 13th, 02              Wed, May 15th, 02	 Wed, Jun 5th, 02
+12. A Party of 3                 Tue, May 14th, 02              Wed, May 15th, 02	 Mon, Jun 17th, 02
+13. Hair on Fire                 Tue, May 14th, 02              Wed, May 15th, 02	 Wed, Jun 19th, 02
+14. A Shitty Map                 Wed, May 15th, 02              Thu, May 16th, 02	 Thu, Jun 20th, 02
+15. Now who's the Boss?          Wed, May 15th, 02              Thu, May 16th, 02 	 Fri, Jun 21st, 02
+16. She Must Be Sexy!            Fri, May 17th, 02              Fri, May 17th, 02	 Sat, Jun 22nd, 02
+17. Death or Life?               Sat, May 18th, 02              Mon, May 20th, 02	 Sun, Jun 23rd, 02
+18. That's Gotta Hurt!           Sat, May 18th, 02              Mon, May 20th, 02	 Mon, Jun 24th, 02
+19. Introducing...Satan!         Sat, May 18th, 02              Tue, May 21st, 02 	 Tue, Jun 25th, 02
+20. In other words, Go To Hell!  Sat, May 18th, 02              Tue, May 21st, 02	 Wed, Jun 26th, 02
+21. Now thats Refreshing!	 Mon, Jun 17th, 02	        Mon, Jun 17th, 02	 Thu, Jun 27th, 02
+22. Steve vs Gonzell in Quake!   Mon, Jun 17th, 02	        Mon, Jun 17th, 02	 Fri, Jun 28th, 02
+23. Honey?                       Sat, May 18th, 02  	        Mon, Jun 17th, 02	 Sat, Jun 29th, 02
+24. I Love Beer, Part 1          Tue, Jun 18th, 02	        Tue, Jun 18th, 02	 Sun, Jun 30th, 02
+25. I Love Beer, Part 2		 Tue, Jun 18th, 02	        Tue, Jun 18th, 02	 Mon, Jul 1st, 02
+26. Vivi's Home			 Tue, Jun 18th, 02	        Tue, Jun 18th, 02	 Tue, Jul 2nd, 02
+27. Show Your Evil Side!	 Sat, May 18th, 02	        Tue, Jun 18th, 02	 Wed, Jul 3rd, 02
+28. BAD News!			 Sat, May 18th, 02	        Tue, Jun 18th, 02	 Thu, Jul 4th, 02
+29. Please...			 Tue, Jun 18th, 02	        Tue, Jun 18th, 02	 Fri, Jul 5th, 02
+30. Don't Let Go!		 Wed, Jun 19th, 02	        Wed, Jun 19th, 02	 Sat, Jul 6th, 02	
+31. No One Will Know		 Wed, Jun 19th, 02	        Wed, Jun 19th, 02	 Mon, Jul 8th, 02
+32. Sharing, Who Needs it?	 Wed, Jun 19th, 02	        Wed, Jun 19th, 02	 Wed, Jul 10th, 02
+33. New Rule!			 Thu, Jun 20th, 02	        Thu, Jun 20th, 02	 Tue, Jul 16th, 02
+34. Oh Well!			 Thu, Jun 20th, 02	        Thu, Jun 20th, 02	 Mon, Jul 28th, 02
+35. Savor The Beer		 Thu, Jun 20th, 02	        Thu, Jun 20th, 02
+36. Lord Forgetful		 Fri, Jun 21st, 02	        Fri, Jun 21st, 02
+37. Need Glasses?		 Fri, Jun 21st, 02	        Fri, Jun 21st, 02
+38. The Plan Part 1		 Sat, Jun 22nd, 02	        Sat, Jun 22nd, 02
+39. The Plan Part 2		 Sun, Jun 23rd, 02	        Sun, Jun 23rd, 02
+40. New Brain?			 Mon, Jun 24th, 02	        Mon, Jun 24th, 02
+41. Trapped!			 Mon, Jun 24th, 02	        Mon, Jun 24th, 02
+42. Door Switch?		 Wed, Jun 26th, 02	        Wed, Jun 26th, 02
+43. The Famous Cape!		 Sat, Jun 29th, 02	        Sat, Jun 29th, 02
+44. Gonzell's Quest, Part 1	 Sun, Jun 30th, 02  	        Sun, Jun 30th, 02
+45. Gonzell's Quest, Part 2	 Mon, Jul 1st, 02		Mon, Jul 1st, 02
+46. Gonzell's Quest, Part 3	 Mon, Jul 1st, 02		Tue, Jul 2nd, 02
+47. Gonzell's Quest, Part 4	 Tue, Jul 2nd, 02		Tue, Jul 2nd, 02
+48. Gonzell's Quest, Part 5	 Wed, Jul 3rd, 02		Wed, Jul 3rd, 02
+49. Gonzell's Quest, Part 6	 Wed, Jul 3rd, 02		Thu, Jul 4th, 02
+50. 50th Celebration		 Thu, Jul 4th, 02		Fri, Jul 5th, 02
+51. Gonzell's Quest, Part 7	 Sun, Jul 14th, 02		Sun, Jul 14th, 02                
+ 

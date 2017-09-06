@@ -1,0 +1,228 @@
+<HTML>
+
+<HEAD>
+<TITLE>Profile Cover</TITLE>
+<STYLE TYPE="text/css" >
+<!--
+BODY {background-color: #000000}
+-->
+</STYLE>
+</HEAD>
+
+
+<script>
+<!-- Beginning of JavaScript -
+
+// CREDITS:
+// FlyingPictures by Urs Dudli and Peter Gehrig 
+// Copyright (c) 2000 Peter Gehrig and Urs Dudli. All rights reserved.
+// Permission given to use the script provided that this notice remains as is.
+// Additional scripts can be found at http://www.24fun.com
+// info@24fun.ch
+// 8/30/2000
+
+//Provided free at http://www.lissaexplains.com (with permission)
+
+
+// URLs of floating images. Add as many images as you like.
+// ATTENTION: Too many images will slow down the floating effect)
+var your_image=new Array()
+your_image[0]="ElderJohn.png"
+your_image[1]="Emma.png"
+your_image[2]="MrSkully.png"
+your_image[3]="RyanTheNerdMonkey.png"
+your_image[4]="Gonzell.png"
+your_image[5]="Vivi.png"
+your_image[6]="Zachary.png"
+your_image[7]="Zomba.png"
+your_image[8]="Steve.png"
+
+
+// You may add links for each image separately.
+// In case you do not want to link a picture just add a '#' instead of an URL (see sample below)
+var your_image_link=new Array()
+your_image_link[0]="http://www.yourlink.com"
+your_image_link[1]="http://www.yourlink.com"
+your_image_link[2]="http://www.yourlink.com"
+your_image_link[3]="#"
+your_image_link[4]="http://www.yourlink.com"
+
+
+// average speed of the floating images. Higher means faster. Change ONLY the number below.
+var floatingspeed=8
+
+// do not edit the variables below
+var tempo=20
+var numberofimages=your_image.length-1
+var stepx=new Array()
+var stepy=new Array()
+for (i=0;i<=numberofimages;i++) {
+	stepx[i]=randommaker(floatingspeed)
+	stepy[i]=randommaker(floatingspeed)
+}
+var imgwidth=new Array()
+var imgheight=new Array()
+for (i=0;i<=numberofimages;i++) {
+	imgwidth[i]=10
+	imgheight[i]=10
+}
+var x,y
+var marginbottom
+var marginleft=0
+var margintop=0
+var marginright
+var timer
+var spancontent=new Array()
+var imgpreload=new Array()
+for (i=0;i<=your_image.length;i++) {
+	imgpreload[i]=new Image()
+	imgpreload[i].src=your_image[i]
+}
+
+for (i=0;i<=numberofimages;i++) {
+	spancontent[i]="<a href='"+your_image_link[i]+"'><img src='"+your_image[i]+"' border='0'></a>"
+}
+
+function setValues() {
+	if (document.all) {
+    	marginbottom=document.body.clientHeight-5
+    	marginright=document.body.clientWidth-5
+		for (i=0;i<=numberofimages;i++) {             
+			var thisspan = eval("document.all.span"+i)
+    		thisspan.innerHTML=spancontent[i]
+			var thisspan = eval("document.all.span"+(i)+".style")
+           	thisspan.posLeft=randommaker(marginright)
+			thisspan.posTop=randommaker(marginbottom)  
+		}
+		for (i=0;i<=numberofimages;i++) {
+			var thisspan = eval("document.all.span"+i)
+			imgwidth[i]=thisspan.offsetWidth
+			imgheight[i]=thisspan.offsetHeight
+			
+		}
+		checkmovement()
+	}
+	if (document.layers) {
+    	marginbottom=window.innerHeight-5
+    	marginright=window.innerWidth-5
+		for (i=0;i<=numberofimages;i++) {             
+			var thisspan=eval("document.span"+i+".document")
+    		thisspan.write(spancontent[i])
+			thisspan.close()
+			var thisspan=eval("document.span"+i)
+           	thisspan.left=randommaker(marginright)
+			thisspan.top=randommaker(marginbottom)  
+		}
+		for (i=0;i<=numberofimages;i++) {
+			var thisspan=eval("document.span"+i+".document")
+			imgwidth[i]=thisspan.width
+			imgheight[i]=thisspan.height
+		}
+    	checkmovement()
+	}
+}
+
+function randommaker(range) {		
+	rand=Math.floor(range*Math.random())
+	if (rand==0) {rand=Math.ceil(range/2)}
+    return rand
+}
+
+function checkmovement() {
+	if (document.all) {
+		checkposition()
+		movepictures()
+    	timer=setTimeout("checkmovement()",tempo)
+	}
+	if (document.layers) {
+		checkposition()
+   		movepictures()
+    	timer=setTimeout("checkmovement()",tempo)
+	}
+}
+
+function movepictures() {
+		if (document.all) {
+			for (i=0;i<=numberofimages;i++) {  
+    			var thisspan=eval("document.all.span"+(i)+".style")
+    			thisspan.posLeft+=stepx[i]
+				thisspan.posTop+=stepy[i]
+    		}
+		}
+		if (document.layers) {
+			for (i=0;i<=numberofimages;i++) {  
+    			var thisspan = eval("document.span"+i)
+    			thisspan.left+=stepx[i]
+				thisspan.top+=stepy[i]
+    		}
+		}
+}
+
+function checkposition() {
+	if (document.all) {
+		for (i=0;i<=numberofimages;i++) {             
+			var thisspan=eval("document.all.span"+i+".style")
+			if (thisspan.posLeft>marginright-imgwidth[i]) {
+				thisspan.posLeft-=Math.abs(stepx[i]+1)
+				stepx[i]=randommaker(floatingspeed)*-1	
+			}
+			if (thisspan.posLeft<marginleft) {
+				thisspan.posLeft+=Math.abs(stepx[i])
+				stepx[i]=randommaker(floatingspeed)			
+			}	
+			if (thisspan.posTop>marginbottom-imgheight[i]) {
+				thisspan.posTop-=Math.abs(stepy[i])
+				stepy[i]=randommaker(floatingspeed)*-1
+
+			}
+			if (thisspan.posTop<margintop) {
+				thisspan.posTop+=Math.abs(stepy[i])
+				stepy[i]=randommaker(floatingspeed)
+			}
+		}
+	}
+	if (document.layers) {
+		for (i=0;i<=numberofimages;i++) {             
+			var thisspan=eval("document.span"+i)
+			if (thisspan.left>marginright-imgwidth[i]) {
+				thisspan.left-=Math.abs(stepx[i]+1)
+				stepx[i]=randommaker(floatingspeed)*-1	
+			}
+			if (thisspan.left<marginleft) {
+				thisspan.left+=Math.abs(stepx[i])
+				stepx[i]=randommaker(floatingspeed)			
+			}	
+			if (thisspan.top>marginbottom-imgheight[i]) {
+				thisspan.top-=Math.abs(stepy[i])
+				stepy[i]=randommaker(floatingspeed)*-1
+
+			}
+			if (thisspan.top<margintop) {
+				thisspan.top+=Math.abs(stepy[i])
+				stepy[i]=randommaker(floatingspeed)
+			}
+		}
+	}
+}
+
+// - End of JavaScript - -->
+</script>
+
+
+
+
+
+
+<BODY id="thisbody" bgcolor="#ffffff" onLoad="setValues()" style="width:100%;overflow-x:hidden;overflow-y:hidden">
+
+<BR><BR>
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=numberofimages;i++) {
+    document.write("<span id='span"+i+"' style='position:absolute'></span>")
+    document.close()
+}
+
+// - End of JavaScript - -->
+</script>

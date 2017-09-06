@@ -1,0 +1,58 @@
+<HTML>
+
+<HEAD>
+<TITLE>Comic Menu</TITLE>
+<STYLE TYPE="text/css" >
+<!--
+BODY {background-color: #000000}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+
+
+<CENTER>
+<script language="javascript">
+function jump(form) {
+var myindex=form.menu.selectedIndex
+if (form.menu.options[myindex].value != "0") 
+{
+window.open(form.menu.options[myindex].value, 
+target="ComicFrame");
+
+}
+}
+//-->
+</script>
+
+<form name="lissamenu2">
+<select name="menu" style="background-color: #000000 ; 
+font size=12 ; font-family: comic sans ms; color:#ffffff" 
+size="1" onchange="jump(this.form)">
+
+<option value="0">Gonzell's Comics</option>
+<option value="0"></option>
+<option value="PublishedComics/WhatdidIMiss.html">What did I Miss?</option>
+<option value="PublishedComics/IPickLove.html">I Pick Love!</option>
+<option value="PublishedComics/Whereyoube.html">Where You Be?</option>
+
+</select>
+</form>
+</CENTER>
+
+
+
+<CENTER>
+<iframe src="BannerStill.html" name="ComicFrame" SCROLLING="auto" noresize width="1005" height="560" style="frameborder="0" border="0">
+</iframe>
+</CENTER>
+
+<p align=center><FONT size="6" color="#ffffff">
+Gonzell's Comics
+</FONT>
+</p>
+
+
+
+</BODY>

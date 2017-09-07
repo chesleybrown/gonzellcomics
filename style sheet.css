@@ -1,12 +1,12 @@
 <STYLE TYPE="text/css" >
 
-H1 {font-family: Matisse ITC; font-size: 16pt; font-weight: bold; 
+H1 {font-family: Matisse ITC; font-size: 16pt; font-weight: bold;
     text-decoration: none; color: #2F4F4F}
-H2 {font-family: Tempus Sans ITC; font-size: 11pt; font-weight: bold; 
+H2 {font-family: Tempus Sans ITC; font-size: 11pt; font-weight: bold;
     text-decoration: none; text-indent: 0.3cm; color: #808080}
-H3 {font-family: Comic Sans MS; font-size: 18pt; color: #C0C0C0; 
+H3 {font-family: Comic Sans MS; font-size: 18pt; color: #C0C0C0;
     text-decoration: none; margin-top: 35px}
-H4 {margin-left: 35px; margin-right: 35px; margin-top: 20px; 
+H4 {margin-left: 35px; margin-right: 35px; margin-top: 20px;
    font-family: Comic Sans Ms; font-size: 11pt; color: #FFDEAD;
    line-height: 20px}
 H5 {<body OnLoad="initMouseEvents()">}
@@ -22,7 +22,7 @@ H6 {<div id="sparks">
 <div id="sDiv8" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Zomba.png"></div>
 <div id="sDiv9" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Zomba.png"></div>
 </div>}
-P {margin-left: 35px; margin-right: 35px; margin-top: 20px; 
+P {margin-left: 35px; margin-right: 35px; margin-top: 20px;
    font-family: Comic Sans Ms; font-size: 11pt; color: #FFDEAD;
    line-height: 20px; text-indent:1.0cm}
 BODY {background-color: #000000}

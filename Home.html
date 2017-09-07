@@ -18,8 +18,9 @@ BODY {background-color: #000000}
 var ver  = navigator.appVersion;
 var dom  = document.getElementById ? 1 : 0;
 var ie5  = (ver.indexOf("MSIE 5") > -1 && dom) ? 1 : 0;
-var n  = (document.layers);
-var ie = (document.all);
+var n = (document.layers);
+/*var ie = (document.all);*/
+var ie = true;
 
 var sparksAflyin = 0;
 var totalSparks = 0;
@@ -33,8 +34,9 @@ if (sparksOn) {
 var mousex = (n) ? e.pageX : event.x+document.body.scrollLeft;
 var mousey = (n) ? e.pageY : event.y+document.body.scrollTop;
 if (!sparksAflyin) {
-for (var k = 0; k <= 9; k++)
-   eval('SHOW("sDiv'+k+'")');
+for (var k = 0; k <= 9; k++) {
+   SHOW("sDiv"+k);
+}
 sparksAflyin = 1;
 totalSparks = 0;
 for(i = 0;i <= 9; i++)
@@ -47,23 +49,25 @@ if (j < eval('anim_'+i+'_x.length') ){
 var tempx = eval('anim_'+i+'_x[j]+mousex');
 var tempy = eval('anim_'+i+'_y[j]+mousey');
 if (ie) {
-if(tempy+30 > (document.body.offsetHeight+document.body.scrollTop))
-tempy = document.body.offsetHeight+document.body.scrollTop-30;
-if(tempx+30 > (document.body.offsetWidth+document.body.scrollLeft))
-tempx = document.body.offsetWidth+document.body.scrollLeft-30;
-eval('document.all.sDiv'+i+'.style.left = tempx;');
-eval('document.all.sDiv'+i+'.style.top  = tempy;');
+  if(tempy+30 > (document.body.offsetHeight+document.body.scrollTop)) {
+    tempy = document.body.offsetHeight+document.body.scrollTop-30;
+  }
+  if(tempx+30 > (document.body.offsetWidth+document.body.scrollLeft)) {
+    tempx = document.body.offsetWidth+document.body.scrollLeft-30;
+  }
+  document.all["sDiv"+i].style.left = tempx;
+  document.all["sDiv"+i].style.top  = tempy;
 }
 if (n) {
-eval('document.layers.sDiv'+i+'.left = tempx;');
-eval('document.layers.sDiv'+i+'.top  = tempy;');
+document.layers["sDiv"+i].left = tempx;
+document.layers["sDiv"+i].top  = tempy;
 }
 j++;
 //  timeout: 50 = fireworks speed, larger number = slower speed
     setTimeout("moveTo("+i+","+j+","+mousex+","+mousey+")",50)
 }
 else {
-eval('HIDE("sDiv'+i+'")');
+HIDE("sDiv"+i);
 totalSparks++;
 }
 if (totalSparks == 10) {
@@ -72,16 +76,10 @@ totalSparks  = 0;
    }
 }
 function SHOW(divName){
-if (document.all)
-eval('document.all.'+divName+'.style.visibility = "visible";');
-else if (document.layers)
-eval('document.layers["'+divName+'"].visibility = "visible";');
+document.all[divName].style.visibility = "visible";
 }
 function HIDE(divName){
-if (document.all)
-eval('document.all.'+divName+'.style.visibility = "hidden";');
-else if (document.layers)
-eval('document.layers["'+divName+'"].visibility = "hide";');
+document.all[divName].style.visibility = "hidden";
 }
 anim_0_x=new Array(20,20,10,0,0,0,0,0,0,0,0,0);
 anim_0_y=new Array(-20,-40,-60,-80,-60,-40,-20,0,20,40,60,80);
@@ -118,25 +116,25 @@ anim_9_y=new Array(-20,-20,-35,-37,-34,-16,10,47,105,150,189,227,273);
 <FONT size="+3" Color="#ffffff">
 
 <marquee behavior="alternate"scrollamount="16">
-<img src="ProfilePics\Gonzell.png" border="0">
+<img src="ProfilePics/Gonzell.png" border="0">
 The Life of Gonzell
-<img src="ProfilePics\Gonzell.png" border="0">
+<img src="ProfilePics/Gonzell.png" border="0">
 </marquee>
 
 </FONT>
 </TEXT>
 
 <div id="sparks">
-<div id="sDiv0" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/ElderJohn.png"></div>
-<div id="sDiv1" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Emma.png"></div>
-<div id="sDiv2" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Zachary.png"></div>
-<div id="sDiv3" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/MrSkully.png"></div>
-<div id="sDiv4" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/RyanTheNerdMonkey.png"></div>
-<div id="sDiv5" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Steve.png"></div>
-<div id="sDiv6" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Vivi.png"></div>
-<div id="sDiv7" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Gonzell.png"></div>
-<div id="sDiv8" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Zomba.png"></div>
-<div id="sDiv9" style="position:absolute; visibility: hidden;"><IMG SRC="Profile Pics/Zomba.png"></div>
+<div id="sDiv0" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/ElderJohn.png"></div>
+<div id="sDiv1" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Emma.png"></div>
+<div id="sDiv2" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Zachary.png"></div>
+<div id="sDiv3" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/MrSkully.png"></div>
+<div id="sDiv4" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/RyanTheNerdMonkey.png"></div>
+<div id="sDiv5" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Steve.png"></div>
+<div id="sDiv6" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Vivi.png"></div>
+<div id="sDiv7" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Gonzell.png"></div>
+<div id="sDiv8" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Zomba.png"></div>
+<div id="sDiv9" style="position:absolute; visibility: hidden;"><IMG SRC="ProfilePics/Zomba.png"></div>
 </div>
 
 </BODY>

@@ -21,7 +21,7 @@ BODY {background-color: #000000}
 </TEXT>
 
 <br>
-<IMG SRC="http://www.geocities.com/gonzell_storage/OhWell.jpg">
+<IMG SRC="../Comics/OhWell.jpg">
 <br>
 
 <TEXT>

@@ -119,23 +119,23 @@ anim_9_y=new Array(-20,-20,-35,-37,-34,-16,10,47,105,150,189,227,273);
 <body OnLoad="initMouseEvents()">
 
 <div id="sparks">
-<div id="sDiv0" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\ElderJohn.png"></div>
-<div id="sDiv1" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Emma.png"></div>
-<div id="sDiv2" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Zachary.png"></div>
-<div id="sDiv3" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\MrSkully.png"></div>
-<div id="sDiv4" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\RyanTheNerdMonkey.png"></div>
-<div id="sDiv5" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Steve.png"></div>
-<div id="sDiv6" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Vivi.png"></div>
-<div id="sDiv7" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Gonzell.png"></div>
-<div id="sDiv8" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Zomba.png"></div>
-<div id="sDiv9" style="position:absolute; visibility: hidden;"><IMG SRC="C:\WINDOWS\Desktop\Comic Website\ProfilePics\Zomba.png"></div>
+<div id="sDiv0" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\ElderJohn.png"></div>
+<div id="sDiv1" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Emma.png"></div>
+<div id="sDiv2" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Zachary.png"></div>
+<div id="sDiv3" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\MrSkully.png"></div>
+<div id="sDiv4" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\RyanTheNerdMonkey.png"></div>
+<div id="sDiv5" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Steve.png"></div>
+<div id="sDiv6" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Vivi.png"></div>
+<div id="sDiv7" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Gonzell.png"></div>
+<div id="sDiv8" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Zomba.png"></div>
+<div id="sDiv9" style="position:absolute; visibility: hidden;"><IMG SRC="../ProfilePics\Zomba.png"></div>
 </div>
 
 
 
 
 <CENTER>
-<iframe src="C:\WINDOWS\Desktop\Comic Website\ProfileCover.html" name="ComicSetFrame" width="680" height="555" style="frameborder="0" border="0">
+<iframe src="ProfileCover.html" name="ComicSetFrame" width="680" height="555" style="frameborder="0" border="0">
 </iframe>
 </CENTER>
 
@@ -144,9 +144,9 @@ anim_9_y=new Array(-20,-20,-35,-37,-34,-16,10,47,105,150,189,227,273);
 <script language="javascript">
 function jump(form) {
 var myindex=form.menu.selectedIndex
-if (form.menu.options[myindex].value != "0") 
+if (form.menu.options[myindex].value != "0")
 {
-window.open(form.menu.options[myindex].value, 
+window.open(form.menu.options[myindex].value,
 target="ComicSetFrame");
 
 }
@@ -155,8 +155,8 @@ target="ComicSetFrame");
 </script>
 
 <form name="Comic Sets">
-<select name="menu" style="background-color: #000000 ; 
-font size=12 ; font-family: comic sans ms; color:#ffffff" 
+<select name="menu" style="background-color: #000000 ;
+font size=12 ; font-family: comic sans ms; color:#ffffff"
 size="1" onchange="jump(this.form)">
 
 <option value="0">Comic Sets</option>
@@ -167,7 +167,7 @@ size="1" onchange="jump(this.form)">
 <option value="RyansFuture Home.html">Ryan's Future Home</option>
 <option value="Outhouse.html">Outhouse</option>
 <option value="LakeKukana.html">Lake Kukana</option>
-<option value="TheMeeting Room.html">Meeting Room</option>
+<option value="TheMeetingRoom.html">Meeting Room</option>
 <option value="MountainHangOut.html">Mountain Hang Out</option>
 </select>
 </form>

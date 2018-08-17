@@ -4,4 +4,8 @@ This was one of my very first websites I built. I feel like this is the digital 
 
 It was from 2002, but be as critical as you want. 😅
 
+I also [wrote about my experience](https://medium.com/@chesley/blast-from-my-past-gonzells-comics-a3da4bf358c5) getting this old code working into today's browsers. That in itself was an interesting experience!
+
+You can now view what this site _mostly_ looked like back in 2002 keeping in mind your screen resolution is likely a lot higher now 😅.
+
 https://chesleybrown.github.io/gonzellcomics/ (originally hosted on geocities 🤣)
